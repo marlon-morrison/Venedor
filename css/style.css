@@ -60,8 +60,18 @@ h1 {
 header {
     padding-top: 50px;
     position: absolute;
-    left: 255px;
-
+    left: 11%;
+}
+@media(max-width: 485px) {
+    header {
+        padding-top: 108px;
+        position: absolute;
+    }
+}
+@media(max-width: 1331px) {
+    header {
+        left: 0;
+    }
 }
 header ul {
     list-style: none;
@@ -147,8 +157,6 @@ header a:hover {
     text-decoration: none;
 }
 .ad img {
-    width: 359px;
-    height: 195px;
     margin: 20px 20px 20px 0;
 }
 /* End of hero */
@@ -164,21 +172,12 @@ main h2 {
     padding-left: 5px;
     font-family: 'Roboto Condensed', sans-serif;
 }
-.welcome img{
-    width: 600px;
-    height: 360px;
-}
 .brand-logo {
     margin: 27px 0 70px 0;
-}
-.brand-logo img{
-    width: 165px;
-    height: 100px;
+    text-align: -webkit-center;
 }
 .tags img {
-    width: 300px;
-    height: 300px;
-    margin: 20px 20px 20px 0;
+    margin: auto;
 }
 .center {
     text-align: center;
@@ -286,13 +285,14 @@ footer p {
     right: 12px;
     top: 4px;
 }
-.people img{
-    width: 64px;
-    height: 53px;
-}
 .border {
     border-bottom: 1px inset #393a3c;
     padding: 90px;
+}
+@media(max-width: 1374px) {
+    .border {
+        padding: 0;
+    }
 }
 .icons li {
     display: inline;
@@ -329,7 +329,7 @@ footer p {
     background:#13bfcb ;
 }
 .line {
-    width: 890px;
+    width: inherit;
     height: 2px;
     position: absolute;
     left: 117px;
@@ -337,7 +337,7 @@ footer p {
     background: #efefef;
 }
 .line-2 {
-    width: 825px;
+    width: inherit;
     height: 2px;
     position: absolute;
     left: 176px;
@@ -345,7 +345,7 @@ footer p {
     background: #efefef;
 }
 .line-3 {
-    width: 783px;
+    width: inherit;
     height: 2px;
     position: absolute;
     left: 227px;
@@ -391,7 +391,6 @@ footer p {
     border-radius: 50%;
     position: absolute;
     bottom: 124px;
-    right: 0;
     padding: 33px;
     color: white;
     font-size: 20px;
